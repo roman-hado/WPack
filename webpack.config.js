@@ -14,7 +14,19 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: './index.html',
-    })
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'media.html',
+      template: './media.html',
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'about.html',
+      template: './about.html',
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'contact.html',
+      template: './contact.html',
+    }),
   ],
   module: {
     rules: [

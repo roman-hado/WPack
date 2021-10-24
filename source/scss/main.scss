@@ -1,8 +1,119 @@
-$black: black;
-$white: white;
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Start */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap');
+
+
 
 body {
-  background: $black;
-  color: $white;
-  height: 1000px;
+  background-color: #FCFCFC;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  letter-spacing: 2px;
+  --header-height: 100px;
+  --footer-height: 80px;
+}
+
+.header {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+  height: var(--header-height);
+}
+.title_h1 a {
+  color:black;
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 50px;
+}
+
+.title_p {
+  color: #AFAFAF;
+  font-size: 18px;
+  line-height: 50px;
+}
+
+.nav__ul {
+  display: flex;
+  line-height: 50px;
+  text-transform: uppercase;
+}
+
+.nav__ul a {
+  font-weight: 100;
+  margin: 0 12px;
+  color: #A7A7A7;
+  text-decoration: none;
+  text-shadow: #E7E7E7 0 0 30px;
+}
+
+.nav__ul a:hover {
+  color:black;
+}
+
+.nav_li_home a{
+  color: black;
+}
+
+.main {
+  min-height: calc(100vh -
+   var(--header-height) - var(--footer-height) - 100px);
+}
+
+
+.footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: var(--footer-height);
+  border-top: 1px solid #E7E7E7;
+  display:flex;
+  justify-content:center;
+  align-items: center;
 }
